@@ -1,15 +1,14 @@
 .index_header_menu {
     height: 75px;
     margin: 0 auto;
-    width: 1500px;
+    max-width: 1500px;
     background-color: rgb(24, 24, 24);
     display: flex;
     align-items: center;
-   
+    padding: 0;
    
 
 }
-
 
 .menu_home {
     padding-left: 800px;
@@ -46,10 +45,11 @@ text-align: right;
 
 
 .index_main_header {
+    padding: 0;
     align-items: flex-end;
     margin: 0 auto;
     height: 600px;
-    width: 1500px;
+    max-width: 1500px;
     background-color: rgb(41, 41, 41);
     display: flex;
     
@@ -120,28 +120,20 @@ margin-bottom: 170px;
 }
 
 
-
-
 /* mobile version */
+
+/* MULTIPLE DEVICE SIZE - max 600px, min601px, min768px, min992px */
 
 
 @media only screen and (max-width: 600px) {
 
     .index_header_menu {
-    
-     
         width: 100%;
-      
-    
     }
 
-
     .index_main_header {
-
         width: 100%;
         justify-content: center;
-     
-    
     }
 
     .index_mainimg {
@@ -149,77 +141,309 @@ margin-bottom: 170px;
         position: fixed;
          width: 100%; /* Slightly smaller than 100%, adjust as needed */
             max-width: 350px;
-      
     }
-
 
     .header_logo {
         padding-top: 10px;
         padding-left: 10px;
         width: 50px;
         align-items: left;
-    
         margin: 0 auto;
     }
-
 
     .container_intro {
         z-index: 100; /* Ensure the text is in front */
         margin: 0 auto;
         height: auto;
         width: 90%;
+    }
         
-        }
+    .intro_p{ 
+        display: none;
+    }
+
+    .intro { 
+        text-align: center;
+    }
         
-        
-        .intro_p{ 
+    .intro_h1 {
+        text-align: center;
+        padding-bottom: 50px;
+    }
 
-         display: none;
+    .header_logo {
+        padding-top: 0;
+        margin: 0;
+        padding-left: 10px;
+        width: 50px;
+    }     
 
-        }
-
-        .intro {
+    .menu {
+        text-decoration: none;
+        color: #00ffc8;
             
-           
-            text-align: center;
-            
+    }
         
-        }
+    .menu_blogs {
+        display: none;
         
-        .intro_h1 {
-            text-align: center;
-            padding-bottom: 50px;
-           
+    }
         
-        }
+        
+    .menu_proj {
+        display: none;
+        
+    }
 
-        .header_logo {
-            padding-top: 0;
-            margin: 0;
-            padding-left: 10px;
-            width: 50px;
-        }     
-        
-        .menu {
-            text-decoration: none;
-            color: #00ffc8;
-            
-        }
-        
-        
-        .menu_blogs {
-           display: none;
-        
-        }
-        
-        
-        .menu_proj {
-            display: none;
-        
-        }
-        .menu_home {
-            display: none;
-        }
+    .menu_home {
+        display: none;
+    }
 
 
 }
+
+
+@media only screen and (max-width: 768px) {
+
+    .index_header_menu {
+        width: 100%;
+    }
+
+    .index_main_header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .index_mainimg {
+        padding-left: 0;
+        position: fixed;
+         width: 100%; /* Slightly smaller than 100%, adjust as needed */
+            max-width: 350px;
+    }
+
+    .header_logo {
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 50px;
+        align-items: left;
+        margin: 0 auto;
+    }
+
+    .container_intro {
+        z-index: 100; /* Ensure the text is in front */
+        margin: 0 auto;
+        height: auto;
+        width: 90%;
+    }
+        
+    .intro_p{ 
+        display: none;
+    }
+
+    .intro { 
+        text-align: center;
+    }
+        
+    .intro_h1 {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .header_logo {
+        padding-top: 0;
+        margin: 0;
+        padding-left: 10px;
+        width: 50px;
+    }     
+
+    .menu {
+        text-decoration: none;
+        color: #00ffc8;
+            
+    }
+
+
+        
+.menu_blogs {
+    display: none;
+    
+}
+    
+    
+.menu_proj {
+    display: none;
+    
+}
+
+.menu_home {
+    display: none;
+}
+        
+
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .index_header_menu {
+        width: 100%;
+    }
+
+    .index_main_header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .index_mainimg {
+        padding-left: 0;
+        position: fixed;
+         width: 100%; /* Slightly smaller than 100%, adjust as needed */
+            max-width: 350px;
+    }
+
+    .header_logo {
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 50px;
+        align-items: left;
+        margin: 0 auto;
+    }
+
+    .container_intro {
+        z-index: 100; /* Ensure the text is in front */
+        margin: 0 auto;
+        height: auto;
+        width: 90%;
+    }
+        
+    .intro_p{ 
+        display: none;
+    }
+
+    .intro { 
+        text-align: center;
+    }
+        
+    .intro_h1 {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .header_logo {
+        padding-top: 0;
+        margin: 0;
+        padding-left: 10px;
+        width: 50px;
+    }     
+
+    .menu {
+        text-decoration: none;
+        color: #00ffc8;
+            
+    }
+
+
+        
+.menu_blogs {
+    display: none;
+    
+}
+    
+    
+.menu_proj {
+    display: none;
+    
+}
+
+.menu_home {
+    display: none;
+}
+        
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .index_header_menu {
+        width: 100%;
+    }
+
+    .index_main_header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .index_mainimg {
+        padding-left: 0;
+        position: fixed;
+         width: 100%; /* Slightly smaller than 100%, adjust as needed */
+            max-width: 350px;
+    }
+
+    .header_logo {
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 50px;
+        align-items: left;
+        margin: 0 auto;
+    }
+
+    .container_intro {
+        z-index: 100; /* Ensure the text is in front */
+        margin: 0 auto;
+        height: auto;
+        width: 90%;
+    }
+        
+    .intro_p{ 
+        display: none;
+    }
+
+    .intro { 
+        text-align: center;
+    }
+        
+    .intro_h1 {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .header_logo {
+        padding-top: 0;
+        margin: 0;
+        padding-left: 10px;
+        width: 50px;
+    }     
+
+    .menu {
+        text-decoration: none;
+        color: #00ffc8;
+            
+    }
+
+    .menu_blogs {
+        display: none;
+        
+    }
+        
+        
+    .menu_proj {
+        display: none;
+        
+    }
+    
+    .menu_home {
+        display: none;
+    }
+        
+
+
+}
+
+
+
+
+
+
